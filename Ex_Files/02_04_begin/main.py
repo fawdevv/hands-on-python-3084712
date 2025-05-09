@@ -18,4 +18,14 @@ for name in reversed(NAMES):
 for i in range(5):
     print(i)
 
+
 # enumerate
+for i, name in enumerate(NAMES):
+    print(f"{i} {name}")
+
+for name, age in zip(NAMES, AGES):
+    print(f"{name} is {age} years old")  
+         
+for i, (name, age) in enumerate(zip(NAMES, AGES)):
+    print(f"{i} {name} is {age} years old")
+
